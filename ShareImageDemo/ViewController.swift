@@ -3,7 +3,7 @@ import UIKit
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
-    super.viewDidLoad()
+    super.viewDidLoad()    
   }
   
   // Change the status bar text color to white

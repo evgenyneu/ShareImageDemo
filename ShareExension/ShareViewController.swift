@@ -6,7 +6,7 @@ class ShareViewController: SLComposeServiceViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configureTextView()
+    configureTextView()    
   }
   
   private func configureTextView() {
