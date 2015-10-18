@@ -414,6 +414,7 @@
 				7E813F861BD320DF00CF3D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E813F961BD3230700CF3D9D /* Build configuration list for PBXNativeTarget "ShareExension" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				7E813F981BD3230700CF3D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
