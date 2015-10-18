@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E1AC8251BD3302200BE4405 /* DestinationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC8241BD3302200BE4405 /* DestinationSelectorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7E1AC8271BD3333300BE4405 /* ShareImageExtensionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC8261BD3333300BE4405 /* ShareImageExtensionConstants.swift */; settings = {ASSET_TAGS = (); }; };
+		7E1AC82B1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC82A1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift */; settings = {ASSET_TAGS = (); }; };
 		7E813F761BD320DF00CF3D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E813F751BD320DF00CF3D9D /* AppDelegate.swift */; };
 		7E813F781BD320DF00CF3D9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E813F771BD320DF00CF3D9D /* ViewController.swift */; };
 		7E813F7B1BD320DF00CF3D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E813F791BD320DF00CF3D9D /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E1AC8241BD3302200BE4405 /* DestinationSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSelectorViewController.swift; sourceTree = "<group>"; };
+		7E1AC8261BD3333300BE4405 /* ShareImageExtensionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageExtensionConstants.swift; sourceTree = "<group>"; };
+		7E1AC82A1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageExtensionViewControllers.swift; sourceTree = "<group>"; };
 		7E813F721BD320DF00CF3D9D /* ShareImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E813F751BD320DF00CF3D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E813F771BD320DF00CF3D9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +113,9 @@
 		7E813F8C1BD3230700CF3D9D /* ShareExension */ = {
 			isa = PBXGroup;
 			children = (
+				7E1AC8241BD3302200BE4405 /* DestinationSelectorViewController.swift */,
+				7E1AC82A1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift */,
+				7E1AC8261BD3333300BE4405 /* ShareImageExtensionConstants.swift */,
 				7E813F8D1BD3230700CF3D9D /* ShareViewController.swift */,
 				7E813F8F1BD3230700CF3D9D /* MainInterface.storyboard */,
 				7E813F921BD3230700CF3D9D /* Info.plist */,
@@ -224,7 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1AC82B1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift in Sources */,
 				7E813F8E1BD3230700CF3D9D /* ShareViewController.swift in Sources */,
+				7E1AC8251BD3302200BE4405 /* DestinationSelectorViewController.swift in Sources */,
+				7E1AC8271BD3333300BE4405 /* ShareImageExtensionConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
