@@ -1,6 +1,6 @@
 ## Image uploading extension for iOS demo
 
-This is an iOS demo app that shows how to create an extension for uploading an image to a web server.
+This is an iOS demo app that shows how to create a "Share" extension for uploading an image to a web server.
 
 THe workflow form the user's point of view:
 
