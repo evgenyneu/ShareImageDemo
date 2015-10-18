@@ -1,5 +1,6 @@
 import UIKit
 import Social
+import MobileCoreServices
 
 class ShareViewController: SLComposeServiceViewController {
   var currentlySelectedDestination = "Images"
@@ -21,10 +22,46 @@ class ShareViewController: SLComposeServiceViewController {
   }
   
   override func didSelectPost() {
-    // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
     
-    // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-    self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+    guard let extensionContext = extensionContext else { return }
+    
+    ShareViewController.sharedImageData(extensionContext) { [weak self] imageData in
+      
+      if let imageData = imageData,
+        weakSelf = self {
+          
+        weakSelf.postImage(imageData, imageName: weakSelf.textView.text)
+      }
+      
+      extensionContext.completeRequestReturningItems([], completionHandler: nil)
+    }
+  }
+  
+  func postImage(imageData: NSData, imageName: String) {
+    // Send the image to the server here with a background NSURLSession download/upload task
+    print("Sending image to the web server")
+  }
+  
+  /// Calls `result` closure with the shared image data or with nil parameter.
+  private static func sharedImageData(extensionContext: NSExtensionContext, result: (NSData?)->()) {
+    let imageType = kUTTypeImage as String
+
+    if let item = extensionContext.inputItems.first as? NSExtensionItem,
+      attachment = item.attachments?.first as? NSItemProvider where
+      attachment.hasItemConformingToTypeIdentifier(imageType) {
+      attachment.loadItemForTypeIdentifier(imageType, options: nil) { url, error in
+        guard let url = url as? NSURL else {
+          result(nil)
+          return
+        }
+        
+        result(NSData(contentsOfURL: url))
+        return
+      }
+    } else {
+      result(nil)
+      return
+    }
   }
   
   override func configurationItems() -> [AnyObject]! {

@@ -10,6 +10,7 @@
 		7E1AC8251BD3302200BE4405 /* DestinationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC8241BD3302200BE4405 /* DestinationSelectorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7E1AC8271BD3333300BE4405 /* ShareImageExtensionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC8261BD3333300BE4405 /* ShareImageExtensionConstants.swift */; settings = {ASSET_TAGS = (); }; };
 		7E1AC82B1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AC82A1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift */; settings = {ASSET_TAGS = (); }; };
+		7E1AC82E1BD352EF00BE4405 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1AC82D1BD352EF00BE4405 /* MobileCoreServices.framework */; };
 		7E813F761BD320DF00CF3D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E813F751BD320DF00CF3D9D /* AppDelegate.swift */; };
 		7E813F781BD320DF00CF3D9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E813F771BD320DF00CF3D9D /* ViewController.swift */; };
 		7E813F7B1BD320DF00CF3D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E813F791BD320DF00CF3D9D /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		7E1AC8241BD3302200BE4405 /* DestinationSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSelectorViewController.swift; sourceTree = "<group>"; };
 		7E1AC8261BD3333300BE4405 /* ShareImageExtensionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageExtensionConstants.swift; sourceTree = "<group>"; };
 		7E1AC82A1BD33B0100BE4405 /* ShareImageExtensionViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageExtensionViewControllers.swift; sourceTree = "<group>"; };
+		7E1AC82D1BD352EF00BE4405 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7E813F721BD320DF00CF3D9D /* ShareImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E813F751BD320DF00CF3D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E813F771BD320DF00CF3D9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1AC82E1BD352EF00BE4405 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 		7E813F691BD320DF00CF3D9D = {
 			isa = PBXGroup;
 			children = (
+				7E1AC82D1BD352EF00BE4405 /* MobileCoreServices.framework */,
 				7E813F741BD320DF00CF3D9D /* ShareImageDemo */,
 				7E813F8C1BD3230700CF3D9D /* ShareExension */,
 				7E813F731BD320DF00CF3D9D /* Products */,
