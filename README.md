@@ -8,3 +8,5 @@ THe workflow form the user's point of view:
 1. Our share extension is opened showing a previous of the image and a Post button.
 1. The user can choose a destination folder for the image.
 1. When user taps the Post button extension creates a background download/upload task. The demo app does not contains the code for uploading the image. The code will depend on the web server API.
+
+<img src='https://raw.githubusercontent.com/evgenyneu/ShareImageDemo/master/Graphics/share_image_ios_demo_screenshot.png' alt='Share image with iOS extension demo' width='320'>
