@@ -27,9 +27,7 @@ class ShareViewController: SLComposeServiceViewController {
     
     ShareViewController.sharedImageData(extensionContext) { [weak self] imageData in
       
-      if let imageData = imageData,
-        weakSelf = self {
-          
+      if let imageData = imageData, weakSelf = self {
         weakSelf.postImage(imageData, imageName: weakSelf.textView.text)
       }
       
