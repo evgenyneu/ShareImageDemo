@@ -1,4 +1,4 @@
-## Image uploading extension for iOS demo
+## Image uploading extension iOS demo app
 
 This is an iOS demo app that shows how to create a "Share" extension for uploading an image to a web server.
 
