@@ -2,7 +2,7 @@
 
 This is an iOS demo app that shows how to create a "Share" extension for uploading an image to a web server.
 
-THe workflow form the user's point of view:
+The workflow form the user's point of view:
 
 1. User shares an image from any app, it can be a Photos app, for example.
 1. Our share extension is opened showing a previous of the image and a Post button.
